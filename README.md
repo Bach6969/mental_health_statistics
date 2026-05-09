@@ -29,7 +29,7 @@ How do mental health outcomes, particularly suicide rates, relate to access to m
 ChatGPT (OpenAI) was used to assist with:
 - brainstorming analysis questions, mainly by imputting my multitude of ideas and having it help me narrow down on them
 - creating a page I could use to copy/paste the commonly used code lines, which I used in combination with copy/pasting from my other similar homework I have done previously
-- Help with the markdown wordy bits
+- Help with the markdown wordy bits, I told it what I wanted to say, then I pasted their version into notepad and rewrote what was there to be in my own words, and pasted that into the markdown
 
 ---
 
@@ -62,14 +62,66 @@ ChatGPT (OpenAI) was used to assist with:
 
 ## 🚀 How to Run This Project
 
-1. Clone or download the repository
-2. Install required libraries:
+## Setup Instructions
 
-   ```
-   pip install pandas matplotlib seaborn
-   ```
-3. Open the Jupyter Notebook file
-4. Run all cells in order to reproduce the analysis
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Bach6969/mental_health_statistics.git
+cd mental_health_statistics
+```
+
+---
+
+### 2. Create a Virtual Environment
+
+#### Windows
+```bash
+python -m venv venv
+```
+
+#### Mac/Linux
+```bash
+python3 -m venv venv
+```
+
+---
+
+### 3. Activate the Virtual Environment
+
+#### Windows
+```bash
+venv\Scripts\activate
+```
+
+#### Mac/Linux
+```bash
+source venv/bin/activate
+```
+
+After activation, your terminal should display `(venv)` at the beginning of the command line.
+
+---
+
+### 4. Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 5. Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open and run:
+
+```text
+notebooks/keystone_final.ipynb
+```
 
 ---
 
