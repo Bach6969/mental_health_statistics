@@ -14,11 +14,22 @@ How do mental health outcomes, particularly suicide rates, relate to access to m
 
 ## 📊 Datasets Used
 
-* **Global Mental Health Crisis Index (2026)**
-  Contains country-level data on suicide rates, mental health resources, spending, and system performance.
+## Datasets Used
 
-* **World Happiness Report (2019)**
-  Provides measures of overall life satisfaction and well-being, used to add broader social context to the analysis.
+- Global Mental Health Crisis Index (2026)  
+  https://www.kaggle.com/datasets/alitaqishah/global-mental-health-crisis-index-2026
+
+- World Happiness Report (2019)  
+  https://www.kaggle.com/datasets/obaidhere/world-happiness-report
+
+---
+
+## AI Usage
+
+ChatGPT (OpenAI) was used to assist with:
+- brainstorming analysis questions, mainly by imputting my multitude of ideas and having it help me narrow down on them
+- creating a page I could use to copy/paste the commonly used code lines, which I used in combination with copy/pasting from my other similar homework I have done previously
+- Help with the markdown wordy bits
 
 ---
 
