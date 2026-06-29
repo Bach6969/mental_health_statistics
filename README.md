@@ -8,7 +8,7 @@ This project explores global patterns in mental health, focusing on how outcomes
 
 ## ❓ Research Question
 
-How do mental health outcomes, particularly suicide rates, relate to access to mental health resources, economic factors, and overall life satisfaction across countries? Why I chose this dataset, as someone who goes all the time to a mental health facillity, the subject is close to my heart.
+How do mental health outcomes, particularly suicide rates, relate to access to mental health resources, economic factors, and overall life satisfaction across countries? Why I chose this dataset, as someone who goes all the time to a mental health facility, the subject is close to my heart.
 
 ---
 
@@ -27,7 +27,7 @@ How do mental health outcomes, particularly suicide rates, relate to access to m
 ## AI Usage
 
 ChatGPT (OpenAI) was used to assist with:
-- brainstorming analysis questions, mainly by imputting my multitude of ideas and having it help me narrow down on them
+- brainstorming analysis questions, mainly by inputting my multitude of ideas and having it help me narrow down on them
 - creating a page I could use to copy/paste the commonly used code lines, which I used in combination with copy/pasting from my other similar homework I have done previously
 - Help with the markdown wordy bits, I told it what I wanted to say, then I pasted their version into notepad and rewrote what was there to be in my own words, and pasted that into the markdown
 
