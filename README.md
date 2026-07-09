@@ -1,4 +1,8 @@
-# Global Mental Health Crisis Analysis
+# Global Well-Being: Exploring the Relationship Between Mental Health, Economic Factors, and Happiness
+
+This project investigates how economic indicators, mental health resources, and social factors relate to national happiness and mental health outcomes across countries.
+
+Developed as a Data Analysis Capstone Project for Code:You.
 
 ## 📌 Project Overview
 
