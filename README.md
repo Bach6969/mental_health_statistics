@@ -1,30 +1,46 @@
 # Global Well-Being: Exploring the Relationship Between Mental Health, Economic Factors, and Happiness
 
-This project investigates how economic indicators, mental health resources, and social factors relate to national happiness and mental health outcomes across countries.
+## Project Overview
 
-Developed as a Data Analysis Capstone Project for Code:You.
+Mental health is an increasingly important component of overall well-being, yet it is influenced by many interconnected economic, social, and healthcare factors. This project combines data from global mental health and World Happiness datasets to explore how these factors relate to one another across 92 countries.
 
-## 📌 Project Overview
-
-This project explores global patterns in mental health, focusing on how outcomes such as suicide rates relate to access to care, economic conditions, and overall well-being. By combining multiple datasets, the analysis aims to better understand the complexity of the global mental health crisis.
+Using Python, Pandas, SQLite, and data visualization techniques, this analysis investigates the relationships between national happiness, mental health outcomes, healthcare resources, and socioeconomic indicators.
 
 ---
 
-## ❓ Research Question
+## Research Question
 
-How do mental health outcomes, particularly suicide rates, relate to access to mental health resources, economic factors, and overall life satisfaction across countries? Why I chose this dataset, as someone who goes all the time to a mental health facility, the subject is close to my heart.
+**Main Research Question**
+
+> What factors are most strongly associated with national happiness and mental health outcomes across countries?
+
+### Supporting Questions
+
+1. Is there a relationship between GDP per capita and national happiness?
+2. Does greater access to mental health care reduce treatment gaps?
+3. Is social media use associated with higher rates of depression and anxiety?
+4. Which regions experience the greatest mental health challenges?
+5. Which factors appear to have the strongest relationship with national happiness?
 
 ---
 
-## 📊 Datasets Used
+## Hypothesis
 
-## Datasets Used
+Countries with stronger economies, better access to mental health care, and greater social support will generally report higher happiness scores and better mental health outcomes than countries with fewer healthcare resources and larger treatment gaps.
+
+---
+
+## Datasets
+
+This project combines two publicly available datasets:
 
 - Global Mental Health Crisis Index (2026)  
   https://www.kaggle.com/datasets/alitaqishah/global-mental-health-crisis-index-2026
 
 - World Happiness Report (2019)  
   https://www.kaggle.com/datasets/obaidhere/world-happiness-report
+
+The datasets were merged using each country's ISO3 country code to create a single dataset for analysis.
 
 ---
 
@@ -37,98 +53,194 @@ ChatGPT (OpenAI) was used to assist with:
 
 ---
 
-## 🛠️ Tools and Libraries
+## Technologies Used
 
-* Python
-* pandas
-* matplotlib
-* seaborn
-* Jupyter Notebook
-
----
-
-## 🔍 Summary of Findings
-
-* Mental health outcomes vary significantly across regions and countries.
-* Higher spending and more resources do not always lead to better outcomes.
-* The relationship between happiness and suicide rates exists but is not strongly consistent.
-* Overall, mental health outcomes are influenced by a combination of economic, social, and healthcare-related factors rather than a single cause.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SQLite3
+- Jupyter Notebook
+- Git & GitHub
 
 ---
 
-## ⚠️ Limitations
+## Project Structure
 
-* The data is cross-sectional and does not capture trends over time.
-* Differences in reporting standards across countries may affect accuracy.
-* Merging datasets from different sources and years may introduce inconsistencies.
+```
+Capstone_Project/
+│
+├── data/
+│   ├── raw/
+│   └── cleaned/
+│
+├── database/
+│   └── mental_health.db
+│
+├── images/
+│   └── erd.png
+│
+├── notebooks/
+│   └── capstone.ipynb
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ---
 
-## 🚀 How to Run This Project
+## Data Preparation
 
-## Setup Instructions
+The combined dataset was cleaned using Pandas.
 
-### 1. Clone the Repository
+Cleaning steps included:
+
+- Handling missing values
+- Inspecting data types
+- Renaming columns for consistency
+- Verifying duplicate records
+- Creating derived variables for analysis
+
+---
+
+## Exploratory Data Analysis
+
+Exploratory data analysis included:
+
+- Summary statistics
+- Missing value analysis
+- Distribution analysis
+- Correlation analysis
+- Regional comparisons
+- Multiple visualizations including:
+
+  - Scatter plots
+  - Regression plots
+  - Histograms
+  - Bar charts
+  - Heatmap
+
+---
+
+## Database Design
+
+The cleaned dataset was normalized into four related SQLite tables:
+
+- Countries
+- Mental_Health
+- Mental_Health_Resources
+- Happiness
+
+The database uses the ISO3 country code as the primary identifier, with foreign key relationships connecting the related tables.
+
+An Entity Relationship Diagram (ERD) was created to illustrate the database design.
+
+---
+
+## SQL
+
+SQLite was used to create and query the relational database.
+
+The project demonstrates SQL concepts including:
+
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- Aggregate functions
+- INNER JOIN
+
+---
+
+## Custom Python Functions
+
+Several reusable Python functions were created to support the analysis, including functions to:
+
+- Classify happiness levels
+- Calculate averages
+- Identify top-performing countries
+- Compute correlations between variables
+
+These functions improve code readability and reduce duplication throughout the notebook.
+
+---
+
+## Key Findings
+
+The analysis identified several important relationships:
+
+- Countries with higher GDP per capita generally reported higher happiness scores.
+- Greater access to mental health resources was associated with smaller treatment gaps.
+- Social media use showed a moderate positive relationship with anxiety but little relationship with depression.
+- Mental health outcomes varied across world regions.
+- Social support, healthy life expectancy, and economic prosperity were among the strongest positive indicators of national happiness.
+
+Overall, the findings suggest that national well-being is influenced by a combination of economic, healthcare, and social factors rather than a single variable.
+
+---
+
+## Limitations
+
+This project has several limitations:
+
+- The dataset contains data for 92 countries.
+- Correlation does not imply causation.
+- Some variables contained missing values.
+- The analysis represents a single point in time rather than long-term trends.
+
+---
+
+## Future Work
+
+Future improvements could include:
+
+- Adding multiple years of data to analyze trends over time.
+- Incorporating additional socioeconomic indicators.
+- Developing predictive machine learning models for happiness or mental health outcomes.
+- Expanding the analysis to include more countries and datasets.
+
+---
+
+## How to Run This Project
+
+1. Clone the repository.
 
 ```bash
 git clone https://github.com/Bach6969/mental_health_statistics.git
+```
+
+2. Navigate to the project folder.
+
+```bash
 cd mental_health_statistics
 ```
 
----
-
-### 2. Create a Virtual Environment
-
-#### Windows
-```bash
-python -m venv venv
-```
-
-#### Mac/Linux
-```bash
-python3 -m venv venv
-```
-
----
-
-### 3. Activate the Virtual Environment
-
-#### Windows
-```bash
-venv\Scripts\activate
-```
-
-#### Mac/Linux
-```bash
-source venv/bin/activate
-```
-
-After activation, your terminal should display `(venv)` at the beginning of the command line.
-
----
-
-### 4. Install Required Libraries
+3. Install the required packages.
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-### 5. Launch Jupyter Notebook
+4. Launch Jupyter Notebook.
 
 ```bash
 jupyter notebook
 ```
 
-Open and run:
-
-```text
-notebooks/keystone_final.ipynb
-```
+5. Open the notebook located in the `notebooks` folder and run the cells in order.
 
 ---
 
-## 🪶 Final Note
+## Author
 
-This project highlights the complexity of the global mental health crisis and shows that no single factor can fully explain differences in outcomes. A deeper, more integrated approach is needed to better understand and address these challenges.
+Created as a Keystone Capstone Project demonstrating skills in:
+
+- Python programming
+- Data cleaning and analysis
+- Data visualization
+- Relational database design
+- SQL
+- Git and GitHub
+- Exploratory data analysis
